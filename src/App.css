@@ -1,0 +1,112 @@
+body {
+  background-image: url('https://wallpapercave.com/wp/wp1827445.jpg');
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+}
+
+.navbar,
+.summary-card,
+.player-info,
+.data-list-box li div h3,
+.player-details p {
+  color: white;
+}
+
+.summary-cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  margin-top: 50px; /* Adjust margin to move cards closer to the top */
+  margin-left: auto;
+}
+
+.summary-card {
+  background-color: rgba(12, 12, 12, 0.8); /* Transparent background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the card */
+  margin: 0 10px; /* Margin between cards */
+  height: 300px; /* Set a specific height for the cards */
+  width: 200px; /* Set a specific width for the cards */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.summary-card h2,
+.summary-card p {
+  margin: 0; /* Remove default margin */
+  overflow: hidden; /* Hide overflowing content */
+  text-overflow: ellipsis; /* Show ellipsis (...) for overflowed text */
+  white-space: nowrap; /* Prevent text from wrapping */
+  max-width: 100%; /* Limit text width to prevent stretching */
+}
+
+.player-info {
+  display: flex;
+  align-items: center; /* Vertically center items */
+}
+
+.player-details {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap if they exceed container width */
+}
+
+.player-details p {
+  margin-right: 10px; /* Adjust margin between paragraphs */
+}
+
+.data-list-box {
+  background-color: rgba(12, 12, 12, 0.8); /* Transparent background */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px; /* Keep the margin-top as needed */
+  /* Adjust margin-left to center the box horizontally */
+  margin-left: auto; 
+  margin-right: auto; /* Also add margin-right to center the box */
+  max-width: 800px; /* Limit the maximum width of the box */
+  width: 80%; /* Set the width to occupy 80% of the viewport */
+  overflow: auto; /* Add scrollbar if content overflows */
+}
+
+.data-list-box li div h3 {
+  margin-right: 10px; /* Adjust the margin value as needed */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px; /* Adjust as needed */
+  height: 100%;
+  background-color: rgba(12, 12, 12, 0.8); /* Transparent background */
+  color: #fff;
+  padding: 20px;
+}
+
+.nav-buttons {
+  margin-top: 20px;
+}
+
+.nav-buttons button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-buttons button:hover {
+  background-color: #777;
+}
+
+.navbar-title {
+  margin-bottom: 50px; /* Add margin below the title */
+}

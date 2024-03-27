@@ -110,3 +110,19 @@ ul {
 .navbar-title {
   margin-bottom: 50px; /* Add margin below the title */
 }
+
+.player-detail-box {
+  background-color: rgba(12, 12, 12, 0.8); /* Transparent background */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px; /* Keep the margin-top as needed */
+  margin-left: auto; /* Center the box horizontally */
+  margin-right: auto; /* Center the box horizontally */
+  max-width: 800px; /* Limit the maximum width of the box */
+  width: 80%; /* Set the width to occupy 80% of the viewport */
+  overflow: auto; /* Add scrollbar if content overflows */
+  color: white; /* Set font color to white */
+  font-size: 18px; /* Set font size to 18px */
+  text-align: center; /* Center-align text */
+}

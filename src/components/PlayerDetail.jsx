@@ -36,15 +36,21 @@ const PlayerDetail = () => {
   }
 
   return (
-    <div>
+    <div className="player-detail-box">
       <h2>{`${player.firstname} ${player.lastname}`}</h2>
       <div>
-        <p>{`Height: ${player.height.feets}'${player.height.inches}"`}</p>
-        <p>{`Weight: ${player.weight.pounds} lbs`}</p>
-        <p>{`College: ${player.college}`}</p>
-        <p>{`Jersey: ${player.leagues.standard ? player.leagues.standard.jersey : 'N/A'}`}</p>
-        <p>{`Position: ${player.leagues.standard ? player.leagues.standard.pos : 'N/A'}`}</p>
-        {/* Add more details as needed */}
+      <p>{`Height: ${player.height.feets}'${player.height.inches}"`}</p>
+      <p>{`Weight: ${player.weight.pounds} lbs`}</p>
+      <p>{`College: ${player.college}`}</p>
+      <p>{`Jersey: ${player.leagues.standard ? player.leagues.standard.jersey : 'N/A'}`}</p>
+      <p>{`Position: ${player.leagues.standard ? player.leagues.standard.pos : 'N/A'}`}</p>
+      <p>{`Birth Date: ${player.birth.date}`}</p>
+      <p>{`Birth Country: ${player.birth.country}`}</p>
+      <p>{`NBA Start: ${player.nba.start}`}</p>
+      <p>{`Years Pro: ${player.nba.pro}`}</p>
+      <p>{`Height in Meters: ${player.height.meters}`}</p>
+      <p>{`Weight in Kilograms: ${player.weight.kilograms}`}</p>
+      <p>{`Affiliation: ${player.affiliation}`}</p>
       </div>
     </div>
   );

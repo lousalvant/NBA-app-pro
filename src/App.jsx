@@ -26,10 +26,6 @@ const App = () => {
         {/* Pass selectedTeam and setSelectedTeam as props to DataList */}
         <DataList selectedTeam={selectedTeam} setSelectedTeam={setSelectedTeam} />
       </div>
-      <div className="player-detail-box">
-        {/* Pass selectedTeam and setSelectedTeam as props to PlayerDetail */}
-        <PlayerDetail selectedTeam={selectedTeam} />
-      </div>
     </div>
   );
 };

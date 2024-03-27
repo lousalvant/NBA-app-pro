@@ -21,6 +21,7 @@ const DataList = () => {
         };
         const response = await fetch(url, options);
         const data = await response.json();
+        console.log('API Response:', data); // Log API response
         setPlayers(data.response);
       } catch (error) {
         console.error('Error fetching player data:', error);
@@ -114,7 +115,7 @@ const DataList = () => {
       <ul>
         {filteredPlayers.slice(0, 20).map((player) => (
           <li key={player.id}>
-            <Link to={`/player/${player.id}`}>
+            <Link to={`/player/${selectedTeam}/${player.id}`}>
               <div className="player-info">
                 <h3>{`${player.firstname} ${player.lastname}`}</h3>
                 <div className="player-details">

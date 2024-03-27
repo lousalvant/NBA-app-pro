@@ -2,11 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 const PlayerDetail = () => {
-  const { id } = useParams();
+  const { id, selectedTeam } = useParams();
   const [player, setPlayer] = useState(null);
-  const [selectedTeam, setSelectedTeam] = useState('1'); // Initialize with a default team ID
+  // const [selectedTeam, setSelectedTeam] = useState('1'); // Initialize with a default team ID
 
   useEffect(() => {
+    console.log('Selected Team:', selectedTeam); // Log selectedTeam prop
+    console.log('Player ID:', id); // Log player ID
+    
     const fetchPlayer = async () => {
       try {
         const url = `https://api-nba-v1.p.rapidapi.com/players?id=${id}&team=${selectedTeam}&season=2023`;

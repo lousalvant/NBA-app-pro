@@ -126,3 +126,22 @@ ul {
   font-size: 18px; /* Set font size to 18px */
   text-align: center; /* Center-align text */
 }
+
+.chart-container {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+  color: white; /* White font color */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  width: 650px; /* Make the chart fill its container */
+  height: 300px; /* Adjust height as needed */
+  margin-top: 20px;
+  margin-left: auto; /* Center the box horizontally */
+  margin-right: auto; /* Center the box horizontally */
+}
+
+/* Adjust the size of the chart canvas */
+#teamStatsChart {
+  width: 300px; /* Make the chart fill its container */
+  height: 300px; /* Adjust height as needed */
+}
+

@@ -5,6 +5,7 @@ import TopTeamsCard from './components/TopTeamsCard';
 import DataList from './components/DataList';
 import PlayerDetail from './components/PlayerDetail'; // Import PlayerDetail component
 import NavBar from './components/NavBar';
+import TeamStatsChart from './components/TeamStatsChart'; // Import TeamStatsChart component
 import './App.css';
 
 const App = () => {
@@ -21,9 +22,12 @@ const App = () => {
         <TeamCard />
         <PlayerCard />
         <TopTeamsCard />
+        
+      </div>
+      <div >
+      <TeamStatsChart />
       </div>
       <div className="data-list-box">
-        {/* Pass selectedTeam and setSelectedTeam as props to DataList */}
         <DataList selectedTeam={selectedTeam} setSelectedTeam={setSelectedTeam} />
       </div>
     </div>

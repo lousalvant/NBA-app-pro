@@ -145,3 +145,21 @@ ul {
   height: 300px; /* Adjust height as needed */
 }
 
+nav {
+  position: fixed; 
+  top: 20px; 
+  right: 20px; 
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.home-link 
+{
+  border:1px dotted white;
+  background:#1d1f1d;
+  width:40px;
+}
